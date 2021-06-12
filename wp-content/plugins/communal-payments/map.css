@@ -1,0 +1,220 @@
+    html {
+        overflow: hidden;
+    }
+    
+    div.field {
+        box-shadow:0px 0px 0px 1px black inset;
+        float: left;
+        background-color: #FFF;
+        font-family: Arial; 
+    }
+
+   div.field span.field_data {
+        /* padding: 5px; */
+        text-align: center;
+        display: block;
+        line-height: 16px;
+    }
+    
+    span.field_data_inactive {
+        color: #AAA;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+    
+    span.extra_data_first{
+        margin-top: -5%;
+    }
+    
+    span.extra_data{
+        text-align: center;
+        font-size: 11px;
+        float: left;
+        line-height: 2px;
+        width: 18px;
+        padding: 6px 1px;
+        border: 1px solid #CCC;
+    }
+    
+    .extra_data.data_electricity_payed{
+        margin-left: 4px;
+    }
+    
+    .field_split_narrow .extra_data.data_size{
+        margin-left: 0;
+        margin-top: 2px;
+    }
+    
+    .field_split_narrow .data_cp, .field_split_narrow .data_tp, .field_split_narrow .data_em{
+        margin: 0;
+    }    
+    
+    .field_split_narrow .data_electricity_payed, .field_split_narrow .data_electrified, .field_split_narrow .data_tp{
+        clear: both;
+        /*margin-left: 38px;*/
+        margin-left: 4px;
+    }
+
+    .field_split_narrow .break {
+        clear: none;
+    }
+    
+    .field_split .extra_data.data_size, .field_split .extra_data.data_electrified, .field_split .extra_data.data_registered, .field_split .extra_data.data_electricity_payed {
+        /*margin-top: 2px;
+        margin-left: 0;*/
+    }
+    
+    .field_split .break {
+    /*    margin-left: 38px;*/
+    }
+    
+    .field_split .data_em.break {
+        clear: none;
+        margin-left: 0;
+    }
+    
+    .field_split .data_cp, .field_split .data_tp, .field_split .data_em{
+        margin-top: 0;
+    }
+    
+    /*.data_cp,*/ .data_tp, .data_em{
+        width: 36px !important;
+    }
+    
+    .data_cp {
+    	width: 128px !important;
+    }
+
+    .title .data_red, .title .data_green {
+        padding: 3px;    
+    }
+    
+    .field .title{
+        margin: 3px 3px 0 3px;
+        padding: 1px;
+        display: block;
+        /* width: 48px; */
+        /* width: 72px; */
+        font-size: 11px;
+        font-weight: 600;
+        background-color: #ffcc99;
+        text-align: center;
+        line-height: 16px;
+    }
+/*    
+    .field_split .title, .field_split_narrow .title{
+        float: left;
+        padding: 0;
+        margin-bottom: 0;
+        margin-right: 0;        
+    }
+*/    
+    span.red_lable{
+        background-color: red;
+        width: 32px;
+        float: none;
+    }
+    
+    span.data_red{
+        background-color: #f7bcbc;
+    }
+    
+    span.data_green{
+        background-color: #c8ffc8;
+    }
+    
+    span.break {
+        clear: both;
+        margin-left: 4px;
+    }
+        
+    div.road {
+        float: left;
+        background-color: #AAA;
+        box-shadow:0px 0px 0px 1px #AAA inset;
+        z-index: -999;
+    }
+
+   div.road span.field_data {
+        display: block;
+        padding: 15px;
+        font-weight: bold;
+        font-family: Arial;
+    }
+
+        
+    div.info{
+        font-size: 11px;
+        background-color: #AFA;
+        box-shadow:none;
+        text-align: center;
+        visibility: hidden;
+    }
+    
+    div.info span.field_data{
+        padding: 10px 0px;
+        color: green;
+    }
+    
+    div#cp_dialog{
+        display:none;
+    }
+
+    
+    div.cp_map{
+        overflow: scroll;
+        width: 100px;
+        height: 100px;
+        /*margin-left: -75px;*/
+    }
+    
+    .loader {
+        margin-left: calc(50% - 323px);
+    }
+    
+    .cp_legend {
+        display: block;
+        width: 645px;
+        position: relative; 
+        padding: 45px 15px;
+        text-align: justify;  
+        border: 3px solid #CCC;     
+    }
+    
+    div.merged_field {
+        box-shadow:0px 0px 0px 3px #F00 inset;
+    }
+    
+    .merged_162-road{
+        content: '';
+        left: 1257px;
+        background-color: #efefef;
+        width: 6px;
+        margin: 0;
+        height: 355px;
+        top: 2px;
+        padding: 0;
+        display: none;
+        position: absolute;
+        z-index: 99;
+    }
+    
+    .merged_199-216-fix{
+        content: '';
+        left: 4993px;
+        background-color: #efefef;
+        width: 6px;
+        margin: 0;
+        height: 86px;
+        top: 2698px;
+        padding: 0;
+        display: block;
+        position: absolute;
+        z-index: 99;
+    }
+    
+    /** 19.11.19 - Изменение вывода блока долга **/
+	.data_cp.data_green {
+    	display: none;
+    }

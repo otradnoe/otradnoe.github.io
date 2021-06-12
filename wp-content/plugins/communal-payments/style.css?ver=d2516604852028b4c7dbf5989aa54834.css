@@ -1,0 +1,147 @@
+.cp_table {
+    margin-left: -75px;
+    width: calc(100% + 150px); 
+}
+
+.cp_table a {
+    color: red;
+}
+/*
+.cp_table td {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+    font-size: 12px;    
+}
+*/
+
+.cp_table td {
+    text-align: center;
+    width: 96px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.cp_table.cp_table_total td:nth-child(1) {
+	width: 128px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cp_table.cp_table_total td:nth-child(2), .cp_table td:nth-child(5) {
+	width: 64px;
+}
+
+.cp_table.cp_table_total td:nth-child(3), .cp_table td:nth-child(4) {
+	width: 96px;
+}
+
+.cp_table.cp_table_total td:nth-child(6) {
+	width: 128px;
+}
+
+.cp_table.cp_table_total tr:nth-child(1) td:first-child {
+    font-style: italic;
+    font-size: 12px;
+    background-color: #42ff0030;
+    font-weight: bold;
+    
+}
+
+.cp_table.cp_table_total tr:nth-child(2){
+	/*border-bottom: 2px solid;*/
+	background-color: #0046ff30;
+}
+
+.cp_table.cp_table_total tr:nth-child(2) td{
+	font-weight: bold;
+	font-size: 12px;
+	font-style: italic;
+	vertical-align: middle;
+}
+
+.cp_table.cp_table_total tr:nth-child(n+3):hover{
+	background-color: #61616130;
+}
+
+.cp_table.cp_electricity thead td{
+	font-weight: bold;
+}
+
+.cp_table.cp_electricity thead tr:first-child{
+	background-color: #42ff0030;
+}
+
+.cp_table.cp_electricity thead tr:nth-child(2){
+	background-color: #0046ff30;
+}
+
+.cp_table.cp_electricity tbody tr:hover{
+	background-color: #61616130;
+}
+
+.cp_table.cp_electricity td[colspan="14"]{
+	background-color: #42ff0030;
+	font-weight: bold;
+}
+
+.cp_filter {
+    margin: 0;
+    margin-bottom: 40px;
+    /* float: right; */
+    margin-left: -75px;
+    width: calc(100% + 150px);     
+}
+
+.cp_filter select {
+    width: 250px;
+    height: 32px;
+    margin-right: 32px;
+}
+
+.cp_filter input[type=submit]{
+	width: 250px;
+}
+
+#cp_dialog .cp_table{
+    margin: 12px 5px !important;
+    width: 100% !important;
+}
+
+.cp_filter input {
+    position: relative;
+    top: 25px;
+    height: 32px;
+}
+
+/*.cp_electricity tr:nth-child(1) td {
+    border: 1px solid black;
+}*/
+
+.cp_electricity {
+    border-left: 1px solid rgba(0,0,0,0.07);
+    border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.cp_electricity thead td {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.cp_electricity thead tr:nth-child(1) td:not(:nth-child(6)),.cp_electricity thead tr:nth-child(2) td:not(:nth-child(12)) {
+    border-right: 1px solid rgba(0,0,0,0.07);    
+}
+
+.cp_electricity td:nth-child(1), .cp_electricity td:nth-child(4), .cp_electricity td:nth-child(7), .cp_electricity td:nth-child(10), .cp_electricity td:nth-child(11){
+    border-right: 1px solid rgba(0,0,0,0.07);
+}
+
+.cp_electricity tr.cp_electricity_total td{
+    border-top:  1px solid rgba(0,0,0,0.07);
+}
+
+@media only screen and (max-width: 1023px) {
+    .page-content .cp_table {
+        margin-left: 0 !important;
+    }
+}
